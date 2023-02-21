@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Song Lyrics">
+		<meta name="keywords" content="web design, newbie design, for assignment">
+		<meta name="author" content="Secret Recipe CMPF123(1A)">
+		
+		<title> Youth Archery Tournament | Admin</title>
+		<link rel="stylesheet" href="./myStyle.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Youth Archery </span>Tournament</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="adminMainMenu.html">Main Menu</a></li>
+					<li><a href=""></a></li>
+					<li><a href="logoutsession.php">Log Out</a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+		<section id="showcase">
+			<div class="container">
+				<h2 style ="float:center;font-size: 50px; padding-top: 200px;">Enter Username</h2>
+				<!--<a href = "playerLogin.html"><button type="submit" class="button_1">Sign Up</button></a>-->	
+				<form class="feedback_1"method="POST" action = "searchplayer.php">
+					<h2>Username: <input type="text" name="username" size="40" required></h2><br><br>
+				   <input class="smallbutton" name="search" type="submit" value="Search">	
+				   <input  class="smallbutton" type="reset" value="Reset">
+			   </form>
+				</div>
+		</section>
+		<section id="newsletter">
+			<div class="container">
+
+			</div>
+		</section>
+		<section id="main">
+			<div class="container" >
+				<article id="main-cal"><br>
+					<h1 class="page-title">Introduction</h1>
+					<p> Preliminary Round: 22-25, Semi-Finals:26-27, Finals: 28 December 2021
+					</p>
+					<h1>Scoring</h1>
+					Standard WA targets are marked with 10 evenly spaced concentric rings, which generally have score values from 1 through 10 assigned to them, except in outdoor Imperial rounds under AGB rules, where they have score values 1, 3, 5, 7 and 9. In addition, there is an inner 10 ring, sometimes called the X ring. 
+					This becomes the 10 ring at indoor compound competitions. Outdoors, it serves as a tiebreaker with the archer scoring the most X's winning. 
+					The number of hits may also be taken into account as another tiebreaker. In World Archery, targets are coloured as follows:<br>
+
+					1 ring & 2 ring – white<br>
+					3 ring & 4 ring – black<br>
+					5 ring & 6 ring – blue<br>
+					7 ring & 8 ring – red<br>
+					9 ring, 10 ring & inner 10 ring – gold<br>
+					The inner ring is usually used for tie-breaking (the competitor closest to the X is the winner)<br>
+
+					Archers score each end by summing the scores for their arrows. An arrow just touching a scoring boundary line, known as a Line Breaker or Line Cutter, is awarded the higher score. Values scored by each arrow are recorded on a score sheet and must be written in descending order (e.g. if an archer scores 5, 7, 6, 10, 9, 8, this must be recorded as 10, 9, 8, 7, 6, 5). During and before scoring no one is allowed to touch the arrows.
+					This is so that if there is disputed arrow score then a judge may be called and the judge makes a ruling on how the arrow lies. The archer in charge of scoring on a target at a tournament is known as the ''Target Captain'' and in larger tournaments, they may be assisted by a ''Target Lieutenant''; a Target Captain makes an initial judgment on all disputed arrows.
+					Under WA rules, in major tournaments, after scoring, each hole is marked before arrows are retrieved. In the event of a "pass through" (the arrow passes straight through the target) or "bouncer" (arrow hits the target and bounces out), points may be awarded to an unmarked hole. Under AGB rules, and in some smaller tournaments, in the case of a bouncer, the archer must step off the shooting line and hold their bow in the air. A judge then decides whether the archer is permitted to shoot a replacement arrow. 
+					If an archer accidentally shoots more arrows than allowed, the highest scoring arrow is not counted and a miss is recorded.
+					<h1>Tentative of Event</h1>
+					<table border=2 width="300px">
+						<tr><th>TIME</th><th>ACTIVITY</th></tr>
+						<tr><td>9:00am-9:30am</td><td>Opening Speech</td></tr>
+						<tr><td>9:30am-10:30am</td><td>-Men's Traditinal bow</td></tr>
+						<tr><td>10:30am-11.30am</td><td>Womens' Traditional Bow</td>td></tr>
+						<tr><td>11:30am-1:00pm</td><td>Lunch Breack</td></tr>
+						<tr><td>1:30pm-2.30pm</td><td>Men's Recurve Bow</td></tr>
+						<tr><td>2:30pm-3.30pm</td><td>Women's Recurve Bow</td></tr>
+					</table>
+
+				</article>	
+				<aside id="sidebar">
+						<div class="box">
+							<img src="./img/bgimg.jpg">
+						</div>
+						<div class="box">
+							<img src="./img/Image01.jpg">
+						</div>
+						<div class="box">
+							<img src="./img/adminpic.jpg">
+						</div>
+				</aside>	
+			</div>
+		</section>
+		
+		<section id="boxes">
+		</section>
+		
+		<section id="newsletter">
+			<table>
+				<tr>
+					<td>
+						<h1></h1>
+					<!--<h1>Meet Our Team!</h1>
+					</td>
+					<td>
+					<p id="vertical-line"></p>
+					</td>
+					<td>
+					<a href="AboutUs.html">
+						<button type="submit" class="button_1" style="margin:0 0 0 42px;">Click Here</button>
+					</a>
+					</td>-->
+				</tr>
+				</table>
+		</section>
+<!--<?php
+ echo "<table border='1'><tr>
+ <td>UserID</td>
+ <td>Username</td>
+ <td>Password</td>
+ <td>First Name</td>
+ <td>Last Name</td>
+ <td>Phone Number</td>
+ <td>Gender</td>
+ <td>Age</td>
+ <td>Email</td>
+ <td>Category</td>
+ </tr>";
+$con=mysqli_connect("localhost", "root", "","webprog_youtharchery") or die("Cannot connect to
+server.".mysqli_error($con));
+$id=@$_POST["id"];
+$username=@$_POST["username"];
+$password=@$_POST["password"];
+$fname=@$_POST["fname"];
+$lname=@$_POST["lname"];
+$phoneno=@$_POST["phoneno"];
+$gender=@$_POST["gender"];
+$age=@$_POST["age"];
+$email=@$_POST["email"];
+$category=@$_POST["category"];
+
+ $sql="SELECT * FROM registration WHERE id LIKE '%$id%'
+ AND username LIKE '%$username%' AND password LIKE '%$password%' ";
+
+ $result=mysqli_query($con,$sql) or die("Cannot execute sql.");
+ while($row=mysqli_fetch_array($result))
+ {
+ $id=$row[0];
+ $username=$row[2];
+ $password=$row[3];
+
+ echo "<tr>
+ <td>$id</td>
+ <td>$username</td>
+ <td>$password</td>
+ <td>$firstname</td>
+ <td>$lastName</td>
+ <td>$phoneno</td>
+ <td>$gender</td>
+ <td>$age</td>
+ <td>$email</td>
+ <td>$category</td>
+ </tr>";
+ }
+ echo "</table>";
+?>	-->
+		
+		<footer>
+			<p>Revolution, Copyright &copy; 2020</p>
+		</footer>
+					
+		
+		
+	</body>
+</html>

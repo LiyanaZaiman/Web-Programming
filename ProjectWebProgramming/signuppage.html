@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Song Lyrics">
+		<meta name="keywords" content="web design, newbie design, for assignment">
+		<meta name="author" content="Secret Recipe CMPF123(1A)">
+		
+		<title>Registration</title>
+		<link rel="stylesheet" href="./myStyle.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Youth Archery Tournament </span>Event</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="playerLogin.html">Player Login</a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+		
+		<div class="grey">
+			<h2><center style="font-size:30px;">Registration Form</center></h2>
+				<form style="background-position:center;" class="container" action="registersuccess.php" method="POST">	
+						User ID<br><input class="feedback_1" type="text" name="id" size="80" placeholder="" required><br><br>	
+						Username<br><input class="feedback_1" type="text" name="username" size="80" placeholder="Username" required><br><br>
+						<!--Password<input type="password" name="password"  required==$0></input>-->
+						Password<br><input class="feedback_1" type="password" name="password" size="80" placeholder="Password" required><br><br>
+						First Name<br><input class="feedback_1" type="text" name="fname" size="80" placeholder="First Name" required><br><br>
+						Last Name<br><input class="feedback_1" type="text" name="lname" size="80" placeholder="Last Name" required><br><br>
+						Phone number<br><input class="feedback_1" type="text" name="phoneno" size="80" placeholder="XXXXXXXXXXXX" required><br><br>
+						<div>Gender:<br>
+							<input type="radio" name="gender" value="Male" checked> Male
+							<input type="radio" name="gender" value="Female"> Female
+						</div><br>
+						Email<br><input class="feedback_1" type="email" name="email"  placeholder="Email" ><br><br>
+						Age<br><input class="feedback_1" type="number" name="age" size="80" placeholder="Age" required><br>
+						Category<br><select class="feedback_1" name="category" style= "width:120px;" required>
+							<option select required>select...</option>
+							<option value="MTB">Men's Traditional Bow</option>
+							<option value="MRB">Men's Recurve Bow</option>
+							<option value="WTB">Women's Traditional Bow</option>
+							<option value="WRB">Women's Recurve Bow</option>
+						</select><br><br>
+						<input class="smallbutton" type="submit" value="Register">	
+						<input class="smallbutton" type="reset" value="Reset">
+				</form>	
+		</div>
+		
+		<footer>
+			<p>Youth Archery, Copyright &copy; 2020</p>
+		</footer>
+					
+		
+		
+	</body>
+</html>
